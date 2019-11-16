@@ -17,6 +17,6 @@
 - worked on sign in feature using username/password but wasnt successful
 
 15/11/2019:
-- working on sign-in feature
-- 
-
+- working on sign-in feature by using methods
+- Couldnt apply methods for sign-in so used case,when statements.
+- designed 1 test case
