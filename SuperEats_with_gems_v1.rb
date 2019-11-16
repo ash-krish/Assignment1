@@ -2,7 +2,6 @@ require "tty-prompt"
 require "colorize"
 prompt = TTY::Prompt.new
 # require_relative "user"
-
 def get_price_of_dish(dish,italian,mexican,indian)
     if italian.key?(dish)
         return italian[dish]
@@ -20,8 +19,6 @@ def get_total_price_of_dishes(dishes,italian,mexican,indian)
     end
     return total
 end
-
-
 cuisine = ["Italian", "Mexican", "Indian"]
 italian = {"Margherita Pizza" => 14, "BBQ Chicken" => 17, "Bolognese Pasta" => 19, "Basil Pasta" => 18, "Pumpkin Risotto" => 20, "Garlic Bread" => 7}
 mexican = {"Veggie nachos" => 13, "Chicken tacos" => 9, "Burritos" => 11, "Stuffed Jalapenos" => 6, "Quesadilla" => 13, "Jarritos soda" => 8, "Warm churros" => 8}
@@ -29,7 +26,6 @@ indian = {"Butter chicken" => 20, "Lamb Biriyani" => 18, "Chicken Kofta" => 21, 
 # username = ["IamHungry", "food_panda", "grub.hub"]
 # passwords = ["abcd","ABCD","not_a_password"]
 # username.zip(passwords).map {|username,passwords|username == passwords}
-
 puts ("WELCOME TO SUPER EATS").colorize(:cyan)
 puts "Please enter you username"
 username = gets.chomp
