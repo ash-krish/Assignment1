@@ -20,3 +20,7 @@
 - working on sign-in feature by using methods
 - Couldnt apply methods for sign-in so used case,when statements.
 - designed 1 test case
+
+16/11/2019:
+- wrote a testing outline of the 1st test case
+
