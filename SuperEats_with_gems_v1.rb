@@ -1,7 +1,6 @@
 require "tty-prompt"
 require "colorize"
 # require_relative "username"
-# require_relative "test"
 prompt = TTY::Prompt.new
 def get_price_of_dish(dish,italian,mexican,indian)
     if italian.key?(dish)
@@ -28,6 +27,22 @@ puts ("WELCOME TO SUPER EATS").colorize(:cyan)
 puts "Please enter you username"
 username = gets.chomp
 password = prompt.mask ("Please enter your password").colorize(:light_magenta)
+username_validity = true
+while username_validity
+case username
+when username = "menuman" && password = "abcd"
+    puts "You are signed in"
+when username = "iamhungry" && password = "xyz"
+    puts "You are signed in"
+when username = "food_panda" && password = "1234"
+    puts "You are signed in"
+else username_validity = false
+    puts "Username/password incorrect.Try again"
+end
+end
+
+
+username_validity = true
 puts "What are you in the mood to eat today?"
 puts
 total_order = []
@@ -89,15 +104,17 @@ address = gets.chomp
 puts
 puts "Hey #{username}.Hope you had a good experience ordering on Super Eats. We are pleased to offer you $5 off on your next order!".colorize(:light_magenta)
 puts
-puts "~~~~~~~~~~~~~~Here is your final order~~~~~~~~~~~~~\n#{total_order}".colorize(:yellow) 
+puts "***********Here is your final order************\n#{total_order}".colorize(:yellow) 
 puts 
 puts "***********The total price for your order is $#{get_total_price_of_dishes(total_order,italian,mexican,indian)}*************".colorize(:yellow)
 puts
 if total_order.length <= 2
-    puts "---------The delivery time is approximately 20 minutes---------".colorize(:yellow)
+    puts "***********The delivery time is approximately 20 minutes***********".colorize(:yellow)
 elsif total_order.length > 2 && total_order.length < 6
-    puts "---------The delivery time is approximately 35 minutes--------- ".colorize(:yellow)
+    puts "*************The delivery time is approximately 35 minutes***********".colorize(:yellow)
 elsif total_order.length >= 6
-    puts "---------The delivery time is approximately 50 minutes-------".colorize(:yellow)
+    puts "***********The delivery time is approximately 50 minutes***********".colorize(:yellow)
 else puts "Invalid"
+end
+else username_validity == false
 end

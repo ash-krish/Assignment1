@@ -1,10 +1,10 @@
 SOFTWARE DEVELOPMENT PLAN
 
-Scope: The scope of this app is to allow the user to order food by selecting dishes from cuisines of their choice.
+Scope: The scope of this 'Super Eats' app is to allow the user to order food online by selecting dishes from cuisines of their choice.
 
 Statement of Purpose
     What the application will do:    
-    This application is an online food delivery app called 'Super Eats'. It enables users to order food from a variety of dishes from various cuisines. The final cart shows them what they have ordered along with the total cost. They can pay using credit/debit card, PayPal,cash on delivery. There is also an option to customise their choice or mention any additional requests such as spice levels, no onions etc. The application then asks for an address to which the food has to be delivered. It also gives the approximate time it would take for delivery.
+    This application is an online food delivery app called 'Super Eats'. It enables users to order food from a variety of dishes from various cuisines. The final cart shows them what they have ordered along with the total cost. There is also an option to mention any additional requests such as spice levels, no onions etc. The application then asks for an address to which the food has to be delivered. It also gives the approximate time it would take for delivery.
 
     The problems this app solves and why I am developing it:   
     1. Food delivery apps have gained so much importance because of smartphone dependence. Nowadays people dont have time to go outside for food. Online ordering mainly solves mobility problems. Customers can order from anywhere - while sitting on a train, in a classroom, while working late from office. 
@@ -21,14 +21,14 @@ Statement of Purpose
 
 
 Features
-1. Multi-select option for user: Once user has selected the cuisine, they can select multiple dishes in one go. This helps in quicker selection of options. It also helps in reduced errors as they do not need to type in names of specific dishes.
+1. Multi-select option for dishes: Once user has selected the cuisine, they can select multiple dishes in one go. This helps in quicker selection of options. It also helps in reduced errors as they do not need to type in names of specific dishes.This feature is enabled with the use of the multi_select option from the tty-prompt gem.
 
-2. Cart
+2. Cart:The cart shows the user's final order, combining from all the cuisines that the user chose. It was developed 
 
-2. Food customisation: If the user wants to customise their dishes such as add more cheese to their pizza, or wanting more spice levels in their curry this app has a unique feature of customising menu. Some people are really picky with their food, this feature can help them add/remove ingredients. 
 
-3. Live tracking : When an order is placed, an almost accurate delivery time is given to the user based on the items involved and the location of delivery. Users can then track their order live - from the time its being made in the kitchen, when its being picked up, if the driver is stuck in traffic!, till it is actually delivered. 
+3. Delivery time : When an order is placed, an almost accurate delivery time is given to the user based on the items involved and the location of delivery. Users can then track their order live - from the time its being made in the kitchen, when its being picked up, if the driver is stuck in traffic!, till it is actually delivered. 
 
+4.Log-in feature using username and password: This app allows the user to proceed with ordering only after they have signed into the app. This feature was developed using case statement. 
 
 
 User Interaction and Experience
