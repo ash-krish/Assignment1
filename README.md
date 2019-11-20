@@ -19,7 +19,20 @@ https://code.visualstudio.com/docs/setup/setup-overview
 Follow the platform specific guides for: macOS, Linux, Windows
 3. 
 4.
-5. TTY-prompt
-colorize gem
+
+Gem installation:
+1. TTY-prompt: to install TTY-prompt, type 
+sudo gem install tty-prompt
+In order to start asking questions on the command line, create prompt:
+require "tty-prompt"
+prompt = TTY::Prompt.new
+
+
+2. colorize :to install Colorize, type
+sudo gem install colorize
+In ruby file,
+require 'colorize' - Extends String class
+require 'colorized_string' - add ColorizedString class
+
 
 #script file
