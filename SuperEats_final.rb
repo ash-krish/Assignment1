@@ -2,6 +2,8 @@ require "tty-prompt"
 require "colorize"
 require "artii"
 require 'colorized_string'
+a = Artii::Base.new
+puts a.asciify('Super Eats!')
 prompt = TTY::Prompt.new(active_color: :green)
 
 def get_price_of_dish(dish,italian,mexican,indian)
