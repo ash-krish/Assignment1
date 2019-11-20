@@ -1,6 +1,6 @@
 SOFTWARE DEVELOPMENT PLAN
 
-SCOPE: The scope of this 'Super Eats' app is to allow the user to order food online by selecting dishes from cuisines of their choice.
+SCOPE: The scope of this 'Super Eats' app is to allow the user to order food online from nearby food-courts, by selecting dishes from cuisines of their choice.
 
 STATEMENT OF PURPOSE:
     What the application will do:
@@ -28,7 +28,7 @@ FEATURES:
  c) User friendly error message displayed for invalid inputs.
 
 2. Cart and final costs:
-a) The cart shows the user's final order, total price by compiling and displaying all the dishes across cuisines that the user chose. This feature was developed with the help of creating an empty array variable which keeps appending user's input as they order. The total price of the order is obtained by defining methods to get price of single dish and another method to get the price of all the dishes ordered.
+a) The cart shows the user's final order, total price by compiling and displaying all the dishes across cuisines that the user chose. This feature was developed with the help of creating an empty array variable which keeps appending user's input as they order. The total price of the order is obtained by creating variables and defining methods to get price of single dish and another method to get the price of all the dishes ordered.
 
 3. Delivery time:
 a) The delivery time is given to the user based on the total items ordered. It is calculated by writing conditions using comparison operators between number of items and the minutes taken to deliver.
@@ -41,13 +41,9 @@ a) This app allows the user to proceed with ordering only after they have signed
 USER INTERACTION AND EXPERIENCE:
 Super Eats app is quite descriptive and user-friendly at every step. 
 1. Once the program starts in terminal, the user is asked for the username and password. 
-2. After user is logged in successfully, the options for cuisines(Italian,Mexican,Indian) show up and the user has to type in the desired option. Errors are handled in this step by way of displaying an error message when anything other than the options are typed.
+2. After user is logged in successfully, the options for cuisines(Italian,Mexican,Indian) show up and the user has to type in the desired option. By using || operators, upcase, downcase and  capitalize inputs are all taken care of. Errors are handled in this step by way of displaying an error message when anything other than the options are typed.
 3. The dishes under the chosen cuisine show up and the user can select multiple dishes in one go, which are then displayed.
 4. User is asked if they would like to order food from another cuisine. If user types yes, the cuisines are displayed repeatedly and the process continues. If the user types in no, the next stage of the order comes up.
 5. The user is then asked if they have any additional requests, which they can type in.
 6. The next step asks for the user's address input.
 7. The user is then displayed with the final order, final price, and the time for delivery of food.
-
-References
-Gloriafood.com
-vanndigit.com
