@@ -27,21 +27,21 @@ mexican = {"Veggie nachos" => 13, "Chicken tacos" => 9, "Burritos" => 11, "Stuff
 indian = {"Butter chicken" => 20, "Lamb Biriyani" => 18, "Chicken Kofta" => 21, "Dal Tadka" => 16, "Naan" => 5, "Mango lassi" => 4}
 
 puts ("WELCOME TO SUPER EATS").colorize(:cyan).underline
-puts ("Please enter you username").colorize(:light_magenta)
+puts ("Please enter your username").colorize(:light_magenta)
 username = gets.chomp
 password = prompt.mask ("Please enter your password").colorize(:light_magenta)
- 
-case username
-when username = "menuman" && password = "abcd"
+username_validity = true
+if (username == "menuman" && password == "abcd")
+    puts "You are signed in" 
+elsif (username == "iamhungry" && password == "xyz")
     puts "You are signed in"
-when username = "iamhungry" && password = "xyz"
+elsif(username == "food_panda" && password == "1234")
     puts "You are signed in"
-when username = "food_panda" && password = "1234"
-    puts "You are signed in"
-else
-    puts "Username/password incorrect.Try again"
+else(username_validity = false) 
+    puts "Incorrect username / password please try again!"
 end
 
+while (username_validity == true)
 puts "What are you in the mood to eat today?".colorize(:light_magenta)
 puts
 total_order = []
@@ -103,8 +103,8 @@ address = gets.chomp
 puts
 puts "Hey #{username}.Hope you had a good experience ordering on Super Eats. We are pleased to offer you $5 off on your next order!".colorize(:light_magenta)
 puts
-puts "***********HERE IS YOUR FINAL ORDER************\n\n#{total_order}".colorize(:yellow) 
-puts 
+puts "***********HERE IS YOUR FINAL ORDER************\n\n#{total_order}".colorize(:yellow)
+puts
 puts "***********THE TOTAL PRICE FOR YOUR ORDER IS $#{get_total_price_of_dishes(total_order,italian,mexican,indian)}*************".colorize(:yellow)
 puts
 if total_order.length <= 2
@@ -115,3 +115,6 @@ elsif total_order.length >= 6
     puts "***********THE DELIVERY TIME IS APPROXIMATELY 50 MINUTES***********".colorize(:yellow)
 else puts "Invalid"
 end
+username_validity = false
+end
+
