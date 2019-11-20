@@ -31,7 +31,7 @@ prompt = TTY::Prompt.new
 2. colorize :to install Colorize, type
 sudo gem install colorize
 In ruby file,
-require 'colorize' - Extends String class
+require 'colorize' - Extends String class; 
 require 'colorized_string' - add ColorizedString class
 
 
