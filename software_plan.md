@@ -23,10 +23,9 @@ STATEMENT OF PURPOSE:
 
 FEATURES:
 1. Mix and match cuisines: 
-
- a) Super Eats allows users to mix and match cuisines and dishes while ordering. This is achieved through effective use of variables and loops. 
- b) This app minimises user input errors as it uses multi-select option from TTY-Prompt Gem. 
- c) User friendly error message displayed for invalid inputs.
+a) Super Eats allows users to mix and match cuisines and dishes while ordering. This is achieved through effective use of variables and loops. 
+b) This app minimises user input errors as it uses multi-select option from TTY-Prompt Gem where the user only has to select using the space bar and then press enter. Manually typing the input   
+c) User friendly error message displayed for invalid inputs.
 
 2. Cart and final costs:
 a) The cart shows the user's final order, total price by compiling and displaying all the dishes across cuisines that the user chose. This feature was developed with the help of creating an empty array variable which keeps appending user's input as they order. The total price of the order is obtained by creating variables and defining methods to get price of single dish and another method to get the price of all the dishes ordered.
@@ -34,9 +33,9 @@ a) The cart shows the user's final order, total price by compiling and displayin
 3. Delivery time:
 a) The delivery time is given to the user based on the total items ordered. It is calculated by writing conditions using comparison operators between number of items and the minutes taken to deliver.
 
-
-4.Log-in feature using username and password:
-a) This app allows the user to proceed with ordering only after they have signed into the app. This feature was developed using case statement. 
+4. Log-in feature using username and password:
+a) This app allows the user to proceed with ordering only after they have signed into the app. If username or password are incorrect, the user is informed via an error message. 
+b) This feature was developed using if/elsif statements and running a loop while creating a variable called username_validity. The variable is selected true when username and password both are correct and it becomes false when either username or password are incorrect.
 
 
 USER INTERACTION AND EXPERIENCE:
@@ -51,3 +50,4 @@ Super Eats app is quite descriptive and user-friendly at every step.
 
 
 CONTROL FLOW DIAGRAM
+[Control Flow Diagram](https://github.com/ash-krish/Assignment1/blob/master/Control_Flow_Diagram.png)
