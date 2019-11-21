@@ -9,3 +9,4 @@ cp ./username.rb ./dist
 # install required gems
 gem install tty-prompt
 gem install colorize
+gem install artii

@@ -22,6 +22,7 @@
 
 16/11/2019:
 - wrote a testing outline of the 1st test case
+- working on coding
 
 18/11/2019:
 - Wrote help file
@@ -29,3 +30,4 @@
 - updated readme.md with help file
 
 20/11/2019:
+-

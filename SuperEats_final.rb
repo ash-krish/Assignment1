@@ -3,7 +3,8 @@ require "colorize"
 require "artii"
 require 'colorized_string'
 a = Artii::Base.new
-puts a.asciify('Super Eats!')
+puts a.asciify('Super Eats!').colorize(:background => :blue)
+puts
 prompt = TTY::Prompt.new(active_color: :green)
 
 def get_price_of_dish(dish,italian,mexican,indian)
@@ -17,8 +18,8 @@ def get_price_of_dish(dish,italian,mexican,indian)
     end
 end
 def get_total_price_of_dishes(dishes,italian,mexican,indian)
-    total = 0
-    dishes.each do |dish|
+     total = 0
+     dishes.each do |dish|
         total += get_price_of_dish(dish,italian,mexican,indian)
     end
     return total
@@ -28,7 +29,7 @@ italian = {"Margherita Pizza" => 14, "BBQ Chicken" => 17, "Bolognese Pasta" => 1
 mexican = {"Veggie nachos" => 13, "Chicken tacos" => 9, "Burritos" => 11, "Stuffed Jalapenos" => 6, "Quesadilla" => 13, "Jarritos soda" => 8, "Warm churros" => 8}
 indian = {"Butter chicken" => 20, "Lamb Biriyani" => 18, "Chicken Kofta" => 21, "Dal Tadka" => 16, "Naan" => 5, "Mango lassi" => 4}
 
-puts ("WELCOME TO SUPER EATS").colorize(:cyan).underline
+puts ("WELCOME TO SUPER EATS").colorize(:light_magenta).underline
 puts ("Please enter your username").colorize(:light_magenta)
 username = gets.chomp
 password = prompt.mask ("Please enter your password").colorize(:light_magenta)
@@ -46,8 +47,8 @@ end
 while (username_validity == true)
 puts "What are you in the mood to eat today?".colorize(:light_magenta)
 puts
-total_order = []
-selecting_food = true
+ total_order = []
+ selecting_food = true
 while selecting_food
 cuisine.each do |cuisine|
     puts cuisine.colorize(:cyan)
@@ -119,4 +120,3 @@ else puts "Invalid"
 end
 username_validity = false
 end
-
