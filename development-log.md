@@ -30,4 +30,5 @@
 - updated readme.md with help file
 
 20/11/2019:
--
+-finalised code and practiced for presenting terminal app
+-updating readme file with software development plan, implementation plan, trello screenshots
