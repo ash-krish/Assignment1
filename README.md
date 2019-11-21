@@ -52,7 +52,7 @@ Super Eats app is quite descriptive and user-friendly at every step.
 
 
 CONTROL FLOW DIAGRAM:
-![Control Flow Diagram](Control_Flow_Diagram.png)
+![Control Flow Diagram](Control_Flow_Diagram_updated.png)
 
 
 IMPLEMENTATION FILE:
@@ -60,7 +60,7 @@ Below is the implementation plan in tabular format
 ![image](Implementation%20plan.png)
 
 #Help file:
-software pre-requisites:
+Software pre-requisites:
 1. Ruby version 2.5.1 
     a) For Windows users -  follow https://rubyinstaller.org/ to install Ruby
     b) For Mac OSX -  You will need to install HomeBrew as a Package Manager. Follow ruby-lang.org/en/documentation/installation/#homebrew
@@ -102,8 +102,6 @@ Features:
 2.Cart showing total order
 3.Delivery time given to user
 4.Mix and match cuisines
-
-
 #Test case outline
 The first test case we applied is for the successful login by using the correct username and password followed by the unsuccessful login by using correct username but incorrect password. I defined a method called log_in with username and password as parameters. Using if/else statements, I passed in the username and its corresponding values as passwords to be returned as true, and any other values as false. For the tests, I defined a method called test_successful_login, inside which I gave the previously saved values for username and password. I then mentioned that the expected_result is true(since I had passed the correct values) and the actual_result as the method log_in. Using if/else statements, if the expected_result equalled actual_result then it would show up as pass, or fail. On calling method test_successful_login, we got a Pass. Similarly for testing a negative case, I defined a method called test_unsuccessful_login. I then used a random username and password. I knew the expected_result was false based on the values given in method log_in. As tested in the positive case, on calling method test_unsuccessful_login it was a Pass. 
 
