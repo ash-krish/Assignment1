@@ -1,4 +1,4 @@
-# T1A2 Terminal Application - Online food 
+# T1A2 Terminal Application - Online food order app 'Super Eats'
 
 SOFTWARE DEVELOPMENT PLAN
 
@@ -9,7 +9,7 @@ STATEMENT OF PURPOSE:
     This application is an online food delivery app called 'Super Eats'. It enables users to order food from stores within a food court. They can choose from a variety of dishes from various cuisines. The final cart shows them what they have ordered along with the total cost. There is also an option to mention any additional requests such as spice levels, no onions etc. The application then asks for an address to which the food has to be delivered. It also gives the time it would take for delivery.
 
 
-The problems this app solves and why I am developing it:   
+The problems this app solves and why I am developing it:
 
 1. Food delivery apps have gained so much importance because of smartphone dependence. Nowadays people dont have time to go outside for food. Online ordering mainly solves mobility problems. Customers can order from anywhere - while sitting on a train, in a classroom, while working late from office, or even if they are just bored of eating home coked food! 
 2. Another problem it solves is the misunderstandings that occur when ordering via calling the restaurant directly. Restaurant noises, phone connectivity can lead to confusions which is avoided by online ordering as it is directly specified by the customer
@@ -17,13 +17,11 @@ The problems this app solves and why I am developing it:
 4. There is no minimum order quantity in this app. It doesnt matter if they can order for one, or order for a house party. 
 5.Restaurants during holiday times/office lunch breaks can get crowded and long waiting lines are usual. Order online from the comfort of home or work!
 
-Target audience:    
-Hungry? Busy...or lazy to cook? Vegetarian/vegan friendly? This app appeals to people of all ages because it is so convenient, painless to order, and quick. It mainly is useful for office goers who dont want to step out of office and wait in long queues to grab lunch. This app has dishes available from many of the restaurants within the CBD.
-    
+Target audience:
+Hungry? Busy...or lazy to cook? Vegetarian/vegan friendly? This app appeals to people of all ages because it is so convenient, painless to order, and quick. It mainly is useful for office goers who dont want to step out of office and wait in long queues to grab lunch. This app has dishes available from many of the restaurants within the CBD
 
 How target audience will use it:    
-The current version of the application is a prototype to be executed on the terminal. The long term goal is to publish it in the iOS or Android app store and can be accesed via browser too. Users need to sign up with their email ids when they use the app for the first time after which they can easily log in whenever ordering. They can create a profile with their favourite cuisines saved for future use. The 'Menu' icon gives them the choices of cuisines which they initially choose, after which they have the individual dishes to choose from a range of entrees, mains and desserts. The prices are mentioned alongside the dishes. If the user has any requests such as wanting extra napkins, reducing spice levels etc, there is an 'additional requests' column where they can write it down. If the user wants to customise their item like adding extra cheese or making it meatless there is an option of 'Customise item'. The 'cart' then shows the final order and price for payment.Finally, their delivery address is to be given. Once the payment is made, their order can be live tracked until collection.
-
+The current version of the application is a prototype to be executed on the terminal. The long term goal is to publish it in the iOS or Android app store and can be accesed via browser too. Users need to sign up with their email ids when they use the app for the first time after which they can easily log in whenever ordering. They can create a profile with their favourite cuisines saved for future use. The 'Menu' icon gives them the choices of cuisines which they initially choose, after which they have the individual dishes to choose from a range of entrees, mains and desserts. The prices are mentioned alongside the dishes. If the user has any requests such as wanting extra napkins, reducing spice levels etc, there is an 'additional requests' column where they can write it down. Finally, their delivery address is to be given. The 'cart' then shows the final order. Total price and delivery time is then mentioned to the user
 
 FEATURES:
 1. Mix and match cuisines: 
@@ -53,27 +51,15 @@ Super Eats app is quite descriptive and user-friendly at every step.
 7. The user is then displayed with the final order, final price, and the time for delivery of food.
 
 
-CONTROL FLOW DIAGRAM
-[Control Flow Diagram](https://github.com/ash-krish/Assignment1/blob/master/Control_Flow_Diagram.png)
+CONTROL FLOW DIAGRAM:
+![Control Flow Diagram](Control_Flow_Diagram.png)
 
 
-IMPLEMENTATION FILE
-Below is the implementation plan in tabular format(https://github.com/ash-krish/Assignment1/blob/master/Implementation%20plan.png)
+IMPLEMENTATION FILE:
+Below is the implementation plan in tabular format
+![image](Implementation%20plan.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Help file: 
+#Help file:
 software pre-requisites:
 1. Ruby version 2.5.1 
     a) For Windows users -  follow https://rubyinstaller.org/ to install Ruby
@@ -97,7 +83,6 @@ In order to start asking questions on the command line, create prompt:
 require "tty-prompt"
 prompt = TTY::Prompt.new
 
-
 2. Colorize :to install Colorize, type
 sudo gem install colorize
 In ruby file,
@@ -118,13 +103,12 @@ Features:
 3.Delivery time given to user
 4.Mix and match cuisines
 
-#Script file
-#!/bin/sh
 
-mkdir -p dist
-cp ./SuperEats_with_gems_v1.rb ./dist
-cp ./test.rb ./dist
-cp ./username.rb ./dist
-gem install tty-prompt
-gem install colorize
-gem install artii
+#Test case outline
+The first test case we applied is for the successful login by using the correct username and password followed by the unsuccessful login by using correct username but incorrect password. I defined a method called log_in with username and password as parameters. Using if/else statements, I passed in the username and its corresponding values as passwords to be returned as true, and any other values as false. For the tests, I defined a method called test_successful_login, inside which I gave the previously saved values for username and password. I then mentioned that the expected_result is true(since I had passed the correct values) and the actual_result as the method log_in. Using if/else statements, if the expected_result equalled actual_result then it would show up as pass, or fail. On calling method test_successful_login, we got a Pass. Similarly for testing a negative case, I defined a method called test_unsuccessful_login. I then used a random username and password. I knew the expected_result was false based on the values given in method log_in. As tested in the positive case, on calling method test_unsuccessful_login it was a Pass. 
+
+#Trello screenshots
+Here are screenshots from my project management application Trello
+ ![image_1](trello_1.png)
+ ![image_2](trello_2.png)
+ ![image_3](trello_3.png)
